@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import TextUppercase from './components/text/text';
+import Button from './components/button/button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h2 className='title'>Meu Parágrafo Colorido</h2>
+    <div>
+      <TextUppercase text="Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
     </div>
+    <Button label="Baixar CV"/>
+    </>
   );
 }
 
